@@ -21,6 +21,13 @@ import LeetCodeTracker from "./LeetCodeTracker";
 const YOUTUBE_API_KEY = "AIzaSyAHD2mGMD8czupOU79UvLk9flVy9Nm1iyY";
 const PLAYLIST_ID = "PLot-Xpze53lfJlNm5S0fq3AmoyugNGqPk";
 
+function parseISODuration(iso) {
+  const match = iso.match(/PT(?:(\d+)M)?(?:(\d+)S)?/);
+  const minutes = parseInt(match?.[1] || 0);
+  const seconds = parseInt(match?.[2] || 0);
+  return `${minutes}m ${seconds.toString().padStart(2, "0")}s`;
+}
+
 function AppContent({ user }) {
   const [videos, setVideos] = useState([]);
   const [watched, setWatched] = useState([]);
@@ -51,11 +58,22 @@ function AppContent({ user }) {
             `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=${maxResults}&playlistId=${PLAYLIST_ID}&key=${YOUTUBE_API_KEY}&pageToken=${nextPageToken}`
           );
           const data = await res.json();
+          const videoIds = data.items
+            .map((item) => item.snippet.resourceId.videoId)
+            .join(",");
 
-          const formatted = data.items.map((item) => ({
+          // Get durations from videos endpoint
+          const detailsRes = await fetch(
+            `https://www.googleapis.com/youtube/v3/videos?part=contentDetails&id=${videoIds}&key=${YOUTUBE_API_KEY}`
+          );
+          const detailsData = await detailsRes.json();
+
+          const formatted = data.items.map((item, idx) => ({
             id: item.snippet.resourceId.videoId,
             title: item.snippet.title,
             url: `https://www.youtube.com/embed/${item.snippet.resourceId.videoId}`,
+            duration:
+              detailsData.items[idx]?.contentDetails?.duration || "PT0M0S",
           }));
 
           allVideos = [...allVideos, ...formatted];
@@ -330,7 +348,7 @@ function AppContent({ user }) {
                       </button>
                     </div>
                     <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-                      Duration: ~6 min
+                      Duration: {parseISODuration(video.duration)}
                     </div>
 
                     <button
