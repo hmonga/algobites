@@ -1,3 +1,60 @@
+# 🚀 AlgoBites
+
+**AlgoBites** is a personalized, AI-powered learning platform for mastering Data Structures & Algorithms through bite-sized, swipeable YouTube videos — with daily streak tracking, LeetCode logging, note-taking, and smart AI support.
+
+![AlgoBites Preview](https://your-screenshot-url-here.com/preview.png) <!-- Optional preview image -->
+
+---
+
+## 🌟 Features
+
+- 🎥 **YouTube Playlist Integration** – Watch and track bite-sized DSA video tutorials
+- ✅ **Watched Progress** – Automatically track which videos you've completed
+- 📓 **Notes per Video** – Jot down thoughts or important logic per lesson
+- 🔖 **Practice Later Queue** – Save tricky concepts for review
+- ⭐ **Favorites** – Bookmark your top videos
+- 🔁 **Daily Streaks** – Stay consistent with visual streak tracking
+- 🧠 **LeetCode Tracker** – Mark daily problem-solving and visualize your streak
+- 🤖 **AI Assistant** – Ask coding questions per video using an OpenAI-powered bot
+- 🌗 **Dark Mode** – Clean, responsive UI in light and dark themes
+
+---
+
+## 📸 Screenshots
+
+| Home Page (Dark Mode) | LeetCode Tracker | AI Chat Per Video |
+|-----------------------|------------------|--------------------|
+| ![Home](https://your-url.com/home-dark.png) | ![Streak](https://your-url.com/leetcode.png) | ![Chat](https://your-url.com/chat.png) |
+
+---
+
+## 🔧 Tech Stack
+
+- **React** with React Router
+- **Firebase Auth & Firestore** for login, user data, streaks
+- **TailwindCSS** for responsive styling
+- **Vercel** for fast global deployment
+- **OpenAI API** for intelligent assistant
+- **YouTube Data API v3** to fetch and embed videos
+
+---
+
+## 🚀 Live Demo
+
+👉 [Visit the Live Site](https://algobites.vercel.app)
+
+---
+
+## 🛠 Setup Instructions
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/hmonga/algobites.git
+cd algobites
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
