@@ -2,7 +2,7 @@
 
 **AlgoBites** is a personalized, AI-powered learning platform for mastering Data Structures & Algorithms through bite-sized, swipeable YouTube videos — with daily streak tracking, LeetCode logging, note-taking, and smart AI support.
 
-![AlgoBites Preview](https://your-screenshot-url-here.com/preview.png) <!-- Optional preview image -->
+![AlgoBites Preview](https://github.com/hmonga/algobites/issues/1#issue-3281482462) 
 
 ---
 
