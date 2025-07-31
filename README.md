@@ -2,7 +2,7 @@
 
 **AlgoBites** is a personalized, AI-powered learning platform for mastering Data Structures & Algorithms through bite-sized, swipeable YouTube videos — with daily streak tracking, LeetCode logging, note-taking, and smart AI support.
 
-![AlgoBites Preview](https://github.com/hmonga/algobites/issues/1#issue-3281482462) 
+![AlgoBites Preview](https://private-user-images.githubusercontent.com/57323625/473143540-78aaf040-9d10-42cd-b774-3a33552b75f7.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTM5ODkxNDEsIm5iZiI6MTc1Mzk4ODg0MSwicGF0aCI6Ii81NzMyMzYyNS80NzMxNDM1NDAtNzhhYWYwNDAtOWQxMC00MmNkLWI3NzQtM2EzMzU1MmI3NWY3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MzElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzMxVDE5MDcyMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTMxZGRiMDhmYzIxYzUxZGRiMGFjYjJiMTI1MTRkMGY2MDFiNDQ5OWJmNDljOTZlMDMyZjJkN2Y3ODcwYjFjZTkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.hYYHtMpIZsZkE5OryLJ4JPFwItxPij2CC-o7CXpU8fQ) 
 
 ---
 
