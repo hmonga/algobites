@@ -1,0 +1,179 @@
+[debug] [2025-07-31T09:19:39.013Z] ----------------------------------------------------------------------
+[debug] [2025-07-31T09:19:39.016Z] Command:       /usr/local/bin/node /Users/harshmonga/.npm-global/bin/firebase deploy --only functions
+[debug] [2025-07-31T09:19:39.016Z] CLI Version:   14.11.2
+[debug] [2025-07-31T09:19:39.016Z] Platform:      darwin
+[debug] [2025-07-31T09:19:39.016Z] Node Version:  v22.17.1
+[debug] [2025-07-31T09:19:39.017Z] Time:          Thu Jul 31 2025 05:19:39 GMT-0400 (Eastern Daylight Time)
+[debug] [2025-07-31T09:19:39.017Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-31T09:19:39.169Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-31T09:19:39.170Z] > authorizing via signed-in user (harshmonga7@gmail.com)
+[debug] [2025-07-31T09:19:39.170Z] [iam] checking project algobi-14f1f for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2025-07-31T09:19:39.171Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:39.171Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:39.171Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/algobi-14f1f:testIamPermissions [none]
+[debug] [2025-07-31T09:19:39.171Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/algobi-14f1f:testIamPermissions x-goog-quota-user=projects/algobi-14f1f
+[debug] [2025-07-31T09:19:39.171Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/algobi-14f1f:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2025-07-31T09:19:39.462Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/algobi-14f1f:testIamPermissions 200
+[debug] [2025-07-31T09:19:39.462Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/algobi-14f1f:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2025-07-31T09:19:39.462Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:39.462Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:39.462Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/algobi-14f1f/serviceAccounts/algobi-14f1f@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2025-07-31T09:19:39.462Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/algobi-14f1f/serviceAccounts/algobi-14f1f@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-07-31T09:19:39.685Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/algobi-14f1f/serviceAccounts/algobi-14f1f@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2025-07-31T09:19:39.685Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/algobi-14f1f/serviceAccounts/algobi-14f1f@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'algobi-14f1f'...
+[info] 
+[info] i  deploying functions 
+[debug] [2025-07-31T09:19:39.688Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:39.688Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:39.689Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/algobi-14f1f [none]
+[debug] [2025-07-31T09:19:39.809Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/algobi-14f1f 200
+[debug] [2025-07-31T09:19:39.809Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/algobi-14f1f {"projectNumber":"868732304","projectId":"algobi-14f1f","lifecycleState":"ACTIVE","name":"AlgoBites","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-07-31T05:23:36.087810Z"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2025-07-31T09:19:39.813Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:39.813Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:39.813Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/algobi-14f1f/adminSdkConfig [none]
+[debug] [2025-07-31T09:19:40.073Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/algobi-14f1f/adminSdkConfig 200
+[debug] [2025-07-31T09:19:40.074Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/algobi-14f1f/adminSdkConfig {"projectId":"algobi-14f1f","storageBucket":"algobi-14f1f.firebasestorage.app"}
+[debug] [2025-07-31T09:19:40.074Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:40.075Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:40.075Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/algobi-14f1f/configs [none]
+[debug] [2025-07-31T09:19:40.253Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/algobi-14f1f/configs 200
+[debug] [2025-07-31T09:19:40.253Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/algobi-14f1f/configs {"configs":[{"name":"projects/algobi-14f1f/configs/openai"}]}
+[debug] [2025-07-31T09:19:40.254Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:40.254Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:40.254Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/algobi-14f1f/configs/openai/variables [none]
+[debug] [2025-07-31T09:19:40.357Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/algobi-14f1f/configs/openai/variables 200
+[debug] [2025-07-31T09:19:40.357Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/algobi-14f1f/configs/openai/variables {"variables":[{"name":"projects/algobi-14f1f/configs/openai/variables/api_key","updateTime":"2025-07-31T09:12:45.016930698Z"}]}
+[debug] [2025-07-31T09:19:40.358Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:40.358Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:40.358Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/algobi-14f1f/configs/openai/variables/api_key [none]
+[debug] [2025-07-31T09:19:40.475Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/algobi-14f1f/configs/openai/variables/api_key 200
+[debug] [2025-07-31T09:19:40.475Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/algobi-14f1f/configs/openai/variables/api_key {"name":"projects/algobi-14f1f/configs/openai/variables/api_key","updateTime":"2025-07-31T09:12:45.016930698Z","text":"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"}
+[debug] [2025-07-31T09:19:40.477Z] Validating nodejs source
+[debug] [2025-07-31T09:19:41.064Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^5.1.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.104.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-07-31T09:19:41.064Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[debug] [2025-07-31T09:19:41.065Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-07-31T09:19:41.071Z] Found firebase-functions binary at '/Users/harshmonga/Desktop/AlgoBites/algobites/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8044
+
+[debug] [2025-07-31T09:19:41.491Z] Got response from /__/functions.yaml {"endpoints":{"askAI":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"askAI"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] i  extensions: ensuring required API firebaseextensions.googleapis.com is enabled... 
+[debug] [2025-07-31T09:19:45.517Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-31T09:19:45.518Z] > authorizing via signed-in user (harshmonga7@gmail.com)
+[debug] [2025-07-31T09:19:45.518Z] [iam] checking project algobi-14f1f for permissions ["firebase.projects.get","firebaseextensions.instances.list"]
+[debug] [2025-07-31T09:19:45.518Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:45.518Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:45.518Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/algobi-14f1f:testIamPermissions [none]
+[debug] [2025-07-31T09:19:45.518Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/algobi-14f1f:testIamPermissions x-goog-quota-user=projects/algobi-14f1f
+[debug] [2025-07-31T09:19:45.518Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/algobi-14f1f:testIamPermissions {"permissions":["firebase.projects.get","firebaseextensions.instances.list"]}
+[debug] [2025-07-31T09:19:45.704Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/algobi-14f1f:testIamPermissions 200
+[debug] [2025-07-31T09:19:45.704Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/algobi-14f1f:testIamPermissions {"permissions":["firebase.projects.get","firebaseextensions.instances.list"]}
+[debug] [2025-07-31T09:19:45.705Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:45.705Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:45.705Z] >>> [apiv2][query] GET https://firebaseextensions.googleapis.com/v1beta/projects/algobi-14f1f/instances pageSize=100&pageToken=
+[debug] [2025-07-31T09:19:46.018Z] <<< [apiv2][status] GET https://firebaseextensions.googleapis.com/v1beta/projects/algobi-14f1f/instances 200
+[debug] [2025-07-31T09:19:46.018Z] <<< [apiv2][body] GET https://firebaseextensions.googleapis.com/v1beta/projects/algobi-14f1f/instances {}
+[info] i  functions: preparing functions directory for uploading... 
+[info] i  functions: packaged /Users/harshmonga/Desktop/AlgoBites/algobites/functions (74.05 KB) for uploading 
+[debug] [2025-07-31T09:19:46.058Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:46.058Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:46.058Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/projects/algobi-14f1f/locations/-/functions [none]
+[debug] [2025-07-31T09:19:46.584Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/projects/algobi-14f1f/locations/-/functions 200
+[debug] [2025-07-31T09:19:46.584Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/projects/algobi-14f1f/locations/-/functions {}
+[debug] [2025-07-31T09:19:46.585Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:46.585Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:46.585Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/algobi-14f1f/locations/-/functions filter=environment%3D%22GEN_2%22
+[debug] [2025-07-31T09:19:47.072Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/algobi-14f1f/locations/-/functions 200
+[debug] [2025-07-31T09:19:47.073Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/algobi-14f1f/locations/-/functions {"functions":[{"name":"projects/algobi-14f1f/locations/us-central1/functions/leetcodeStats","buildConfig":{"build":"projects/868732304/locations/us-central1/builds/20cc7225-7ca9-42ab-b17d-d8fc851b8cb5","runtime":"nodejs22","entryPoint":"leetcodeStats","source":{"storageSource":{"bucket":"gcf-v2-sources-868732304-us-central1","object":"leetcodeStats/function-source.zip","generation":"1753949631161201"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"dockerRepository":"projects/algobi-14f1f/locations/us-central1/repositories/gcf-artifacts","sourceProvenance":{"resolvedStorageSource":{"bucket":"gcf-v2-sources-868732304-us-central1","object":"leetcodeStats/function-source.zip","generation":"1753949631161201"}},"dockerRegistry":"ARTIFACT_REGISTRY","serviceAccount":"projects/algobi-14f1f/serviceAccounts/868732304-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/algobi-14f1f/locations/us-central1/services/leetcodestats","timeoutSeconds":60,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"algobi-14f1f\",\"storageBucket\":\"algobi-14f1f.firebasestorage.app\"}","GCLOUD_PROJECT":"algobi-14f1f","EVENTARC_CLOUD_EVENT_SOURCE":"projects/algobi-14f1f/locations/us-central1/services/leetcodeStats","FUNCTION_TARGET":"leetcodeStats","LOG_EXECUTION_ID":"true"},"maxInstanceCount":20,"ingressSettings":"ALLOW_ALL","uri":"https://leetcodestats-rpmntlvjpq-uc.a.run.app","serviceAccountEmail":"868732304-compute@developer.gserviceaccount.com","availableMemory":"256Mi","allTrafficOnLatestRevision":true,"revision":"leetcodestats-00004-dej","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"state":"ACTIVE","updateTime":"2025-07-31T08:14:50.720669768Z","labels":{"firebase-functions-hash":"df13eb2b552211a84c553d2db36762bf44631d2f","deployment-tool":"cli-firebase"},"environment":"GEN_2","url":"https://us-central1-algobi-14f1f.cloudfunctions.net/leetcodeStats","createTime":"2025-07-31T07:54:51.096678994Z","satisfiesPzi":true}]}
+[info] i  functions: ensuring required API run.googleapis.com is enabled... 
+[info] i  functions: ensuring required API eventarc.googleapis.com is enabled... 
+[info] i  functions: ensuring required API pubsub.googleapis.com is enabled... 
+[info] i  functions: ensuring required API storage.googleapis.com is enabled... 
+[info] i  functions: generating the service identity for pubsub.googleapis.com... 
+[debug] [2025-07-31T09:19:47.077Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:47.077Z] Checked if tokens are valid: true, expires at: 1753956585360
+[info] i  functions: generating the service identity for eventarc.googleapis.com... 
+[debug] [2025-07-31T09:19:47.078Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:47.078Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:47.078Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1beta1/projects/868732304/services/pubsub.googleapis.com:generateServiceIdentity [none]
+[debug] [2025-07-31T09:19:47.078Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1beta1/projects/868732304/services/pubsub.googleapis.com:generateServiceIdentity x-goog-quota-user=projects/868732304
+[debug] [2025-07-31T09:19:47.078Z] >>> [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/868732304/services/pubsub.googleapis.com:generateServiceIdentity {}
+[debug] [2025-07-31T09:19:47.079Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1beta1/projects/868732304/services/eventarc.googleapis.com:generateServiceIdentity [none]
+[debug] [2025-07-31T09:19:47.079Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1beta1/projects/868732304/services/eventarc.googleapis.com:generateServiceIdentity x-goog-quota-user=projects/868732304
+[debug] [2025-07-31T09:19:47.079Z] >>> [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/868732304/services/eventarc.googleapis.com:generateServiceIdentity {}
+[debug] [2025-07-31T09:19:47.555Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1beta1/projects/868732304/services/pubsub.googleapis.com:generateServiceIdentity 200
+[debug] [2025-07-31T09:19:47.556Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/868732304/services/pubsub.googleapis.com:generateServiceIdentity {"name":"operations/finished.DONE_OPERATION","done":true,"response":{"@type":"type.googleapis.com/google.api.serviceusage.v1beta1.ServiceIdentity","email":"service-868732304@gcp-sa-pubsub.iam.gserviceaccount.com","uniqueId":"116940222721372999513"}}
+[debug] [2025-07-31T09:19:47.556Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1beta1/projects/868732304/services/eventarc.googleapis.com:generateServiceIdentity 200
+[debug] [2025-07-31T09:19:47.556Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/868732304/services/eventarc.googleapis.com:generateServiceIdentity {"name":"operations/finished.DONE_OPERATION","done":true,"response":{"@type":"type.googleapis.com/google.api.serviceusage.v1beta1.ServiceIdentity","email":"service-868732304@gcp-sa-eventarc.iam.gserviceaccount.com","uniqueId":"103812764546739477030"}}
+[debug] [2025-07-31T09:19:47.559Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:47.559Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:47.559Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/algobi-14f1f [none]
+[debug] [2025-07-31T09:19:47.670Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/algobi-14f1f 200
+[debug] [2025-07-31T09:19:47.670Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/algobi-14f1f {"projectNumber":"868732304","projectId":"algobi-14f1f","lifecycleState":"ACTIVE","name":"AlgoBites","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-07-31T05:23:36.087810Z"}
+[debug] [2025-07-31T09:19:47.671Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:47.671Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:47.671Z] >>> [apiv2][query] GET https://compute.googleapis.com/compute/v1/projects/868732304 [none]
+[debug] [2025-07-31T09:19:47.915Z] <<< [apiv2][status] GET https://compute.googleapis.com/compute/v1/projects/868732304 200
+[debug] [2025-07-31T09:19:47.915Z] <<< [apiv2][body] GET https://compute.googleapis.com/compute/v1/projects/868732304 {"kind":"compute#project","id":"6614823257548164122","creationTimestamp":"2025-07-31T02:10:13.970-07:00","name":"algobi-14f1f","commonInstanceMetadata":{"kind":"compute#metadata","fingerprint":"A89h5CwTZtA="},"quotas":[{"metric":"SNAPSHOTS","limit":1000,"usage":0},{"metric":"NETWORKS","limit":5,"usage":1},{"metric":"FIREWALLS","limit":100,"usage":4},{"metric":"IMAGES","limit":100,"usage":0},{"metric":"STATIC_ADDRESSES","limit":8,"usage":0},{"metric":"ROUTES","limit":200,"usage":0},{"metric":"FORWARDING_RULES","limit":15,"usage":0},{"metric":"TARGET_POOLS","limit":50,"usage":0},{"metric":"HEALTH_CHECKS","limit":75,"usage":0},{"metric":"IN_USE_ADDRESSES","limit":8,"usage":0},{"metric":"TARGET_INSTANCES","limit":50,"usage":0},{"metric":"TARGET_HTTP_PROXIES","limit":10,"usage":0},{"metric":"URL_MAPS","limit":10,"usage":0},{"metric":"BACKEND_SERVICES","limit":50,"usage":0},{"metric":"INSTANCE_TEMPLATES","limit":100,"usage":0},{"metric":"TARGET_VPN_GATEWAYS","limit":5,"usage":0},{"metric":"VPN_TUNNELS","limit":10,"usage":0},{"metric":"BACKEND_BUCKETS","limit":3,"usage":0},{"metric":"ROUTERS","limit":10,"usage":0},{"metric":"TARGET_SSL_PROXIES","limit":10,"usage":0},{"metric":"TARGET_HTTPS_PROXIES","limit":10,"usage":0},{"metric":"SSL_CERTIFICATES","limit":10,"usage":0},{"metric":"SUBNETWORKS","limit":100,"usage":0},{"metric":"TARGET_TCP_PROXIES","limit":10,"usage":0},{"metric":"CPUS_ALL_REGIONS","limit":24,"usage":0},{"metric":"SECURITY_POLICIES","limit":10,"usage":0},{"metric":"SECURITY_POLICY_RULES","limit":100,"usage":0},{"metric":"XPN_SERVICE_PROJECTS","limit":1000,"usage":0},{"metric":"PACKET_MIRRORINGS","limit":20,"usage":0},{"metric":"NETWORK_ENDPOINT_GROUPS","limit":100,"usage":0},{"metric":"INTERCONNECTS","limit":6,"usage":0},{"metric":"SSL_POLICIES","limit":10,"usage":0},{"metric":"GLOBAL_INTERNAL_ADDRESSES","limit":5000,"usage":0},{"metric":"VPN_GATEWAYS","limit":5,"usage":0},{"metric":"MACHINE_IMAGES","limit":100,"usage":0},{"metric":"SECURITY_POLICY_CEVAL_RULES","limit":20,"usage":0},{"metric":"GPUS_ALL_REGIONS","limit":0,"usage":0},{"metric":"EXTERNAL_VPN_GATEWAYS","limit":5,"usage":0},{"metric":"PUBLIC_ADVERTISED_PREFIXES","limit":1,"usage":0},{"metric":"PUBLIC_DELEGATED_PREFIXES","limit":10,"usage":0},{"metric":"STATIC_BYOIP_ADDRESSES","limit":128,"usage":0},{"metric":"NETWORK_FIREWALL_POLICIES","limit":10,"usage":0},{"metric":"INTERNAL_TRAFFIC_DIRECTOR_FORWARDING_RULES","limit":15,"usage":0},{"metric":"GLOBAL_EXTERNAL_MANAGED_FORWARDING_RULES","limit":15,"usage":0},{"metric":"GLOBAL_INTERNAL_MANAGED_BACKEND_SERVICES","limit":50,"usage":0},{"metric":"GLOBAL_EXTERNAL_MANAGED_BACKEND_SERVICES","limit":50,"usage":0},{"metric":"GLOBAL_EXTERNAL_PROXY_LB_BACKEND_SERVICES","limit":50,"usage":0},{"metric":"GLOBAL_INTERNAL_TRAFFIC_DIRECTOR_BACKEND_SERVICES","limit":250,"usage":0}],"selfLink":"https://www.googleapis.com/compute/v1/projects/algobi-14f1f","defaultServiceAccount":"868732304-compute@developer.gserviceaccount.com","xpnProjectStatus":"UNSPECIFIED_XPN_PROJECT_STATUS","defaultNetworkTier":"PREMIUM","vmDnsSetting":"ZONAL_ONLY","cloudArmorTier":"CA_STANDARD"}
+[debug] [2025-07-31T09:19:47.916Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:47.916Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:47.916Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/algobi-14f1f/billingInfo [none]
+[debug] [2025-07-31T09:19:48.235Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/algobi-14f1f/billingInfo 200
+[debug] [2025-07-31T09:19:48.235Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/algobi-14f1f/billingInfo {"name":"projects/algobi-14f1f/billingInfo","projectId":"algobi-14f1f","billingAccountName":"billingAccounts/01F742-5F06CC-F1EEB9","billingEnabled":true}
+[debug] [2025-07-31T09:19:48.237Z] [functions] found 1 new HTTP functions, testing setIamPolicy permission...
+[debug] [2025-07-31T09:19:48.238Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:48.238Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:48.238Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/algobi-14f1f:testIamPermissions [none]
+[debug] [2025-07-31T09:19:48.238Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/algobi-14f1f:testIamPermissions x-goog-quota-user=projects/algobi-14f1f
+[debug] [2025-07-31T09:19:48.238Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/algobi-14f1f:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2025-07-31T09:19:48.314Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/algobi-14f1f:testIamPermissions 200
+[debug] [2025-07-31T09:19:48.314Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/algobi-14f1f:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2025-07-31T09:19:48.314Z] [functions] found setIamPolicy permission, proceeding with deploy
+[debug] [2025-07-31T09:19:48.316Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:48.316Z] Checked if tokens are valid: true, expires at: 1753956585360
+[debug] [2025-07-31T09:19:48.316Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v2/projects/algobi-14f1f/locations/us-central1/functions:generateUploadUrl [none]
+[debug] [2025-07-31T09:19:48.515Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v2/projects/algobi-14f1f/locations/us-central1/functions:generateUploadUrl 200
+[debug] [2025-07-31T09:19:48.515Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v2/projects/algobi-14f1f/locations/us-central1/functions:generateUploadUrl {"uploadUrl":"https://storage.googleapis.com/gcf-v2-uploads-868732304.us-central1.cloudfunctions.appspot.com/1001e9b8-86b5-4c5d-9086-1811a79d6136.zip?GoogleAccessId=service-868732304@gcf-admin-robot.iam.gserviceaccount.com&Expires=1753955388&Signature=PyCc%2Fwt2sBZPPMTtgC%2BMiegyinCSWl%2BMuRoNranYRsfJTC%2FEiHaIhUd%2Br5WZWWHkYX68CGi96QPHqLpHF4h89nWhSh92Pf%2F7lYEDs0MXY%2FBmVzWWVKo45QzktGQZUrukjk7e3JIgR3W6srd9a1cn23vcEQ9L7tz4x1TUSfFib12pNg6hNJFCOwIHVJzm%2BHRajZknDeYefAgl%2B3Po5VqkaA7z08M0iq25WcbSDdbDQaT1FFqYHas9fkfWugKJsExgQq900kIsr1IdKSFSUUjS3aoUR8gRL6RDlABCfKhEcvMIjn2%2BOQxLQS%2BGczP%2Bo0NJOZqmNeRJuaevQOPggKVGTQ%3D%3D","storageSource":{"bucket":"gcf-v2-uploads-868732304.us-central1.cloudfunctions.appspot.com","object":"1001e9b8-86b5-4c5d-9086-1811a79d6136.zip"}}
+[debug] [2025-07-31T09:19:48.517Z] >>> [apiv2][query] PUT https://storage.googleapis.com/gcf-v2-uploads-868732304.us-central1.cloudfunctions.appspot.com/1001e9b8-86b5-4c5d-9086-1811a79d6136.zip GoogleAccessId=service-868732304%40gcf-admin-robot.iam.gserviceaccount.com&Expires=1753955388&Signature=PyCc%2Fwt2sBZPPMTtgC%2BMiegyinCSWl%2BMuRoNranYRsfJTC%2FEiHaIhUd%2Br5WZWWHkYX68CGi96QPHqLpHF4h89nWhSh92Pf%2F7lYEDs0MXY%2FBmVzWWVKo45QzktGQZUrukjk7e3JIgR3W6srd9a1cn23vcEQ9L7tz4x1TUSfFib12pNg6hNJFCOwIHVJzm%2BHRajZknDeYefAgl%2B3Po5VqkaA7z08M0iq25WcbSDdbDQaT1FFqYHas9fkfWugKJsExgQq900kIsr1IdKSFSUUjS3aoUR8gRL6RDlABCfKhEcvMIjn2%2BOQxLQS%2BGczP%2Bo0NJOZqmNeRJuaevQOPggKVGTQ%3D%3D
+[debug] [2025-07-31T09:19:48.517Z] >>> [apiv2][body] PUT https://storage.googleapis.com/gcf-v2-uploads-868732304.us-central1.cloudfunctions.appspot.com/1001e9b8-86b5-4c5d-9086-1811a79d6136.zip [stream]
+[debug] [2025-07-31T09:19:48.789Z] <<< [apiv2][status] PUT https://storage.googleapis.com/gcf-v2-uploads-868732304.us-central1.cloudfunctions.appspot.com/1001e9b8-86b5-4c5d-9086-1811a79d6136.zip 200
+[debug] [2025-07-31T09:19:48.789Z] <<< [apiv2][body] PUT https://storage.googleapis.com/gcf-v2-uploads-868732304.us-central1.cloudfunctions.appspot.com/1001e9b8-86b5-4c5d-9086-1811a79d6136.zip [omitted]
+[info] ✔  functions: functions folder uploaded successfully 
+[info] 
+The following functions are found in your project but do not exist in your local source code:
+	leetcodeStats(us-central1)
+
+If you are renaming a function or changing its region, it is recommended that you create the new function first before deleting the old one to prevent event loss. For more info, visit https://firebase.google.com/docs/functions/manage-functions#modify
+
